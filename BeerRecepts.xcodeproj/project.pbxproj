@@ -7,25 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92A5961D7290934457AF6F4D /* Pods_BeerRecepts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA4A1BC899EF745A24FFBFD /* Pods_BeerRecepts.framework */; };
+		C483262B275FF38C006E4401 /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C483262A275FF38C006E4401 /* CartCell.xib */; };
+		C483262E275FF3B6006E4401 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C483262D275FF3B6006E4401 /* CartCell.swift */; };
+		C49BAC88275BAE4600D9154F /* InfoBeerMVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49BAC85275BAE4600D9154F /* InfoBeerMVP.storyboard */; };
+		C49BAC89275BAE4600D9154F /* InfoBeerMVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49BAC86275BAE4600D9154F /* InfoBeerMVPPresenter.swift */; };
+		C49BAC8A275BAE4600D9154F /* InfoBeerMVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49BAC87275BAE4600D9154F /* InfoBeerMVPViewController.swift */; };
 		C4B233742753858F0059619D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233732753858F0059619D /* AppDelegate.swift */; };
 		C4B233762753858F0059619D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233752753858F0059619D /* SceneDelegate.swift */; };
 		C4B233782753858F0059619D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233772753858F0059619D /* ViewController.swift */; };
-		C4B2337B2753858F0059619D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B233792753858F0059619D /* Main.storyboard */; };
+		C4B2337B2753858F0059619D /* Main22.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B233792753858F0059619D /* Main22.storyboard */; };
 		C4B2337E2753858F0059619D /* BeerRecepts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4B2337C2753858F0059619D /* BeerRecepts.xcdatamodeld */; };
 		C4B23380275385900059619D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B2337F275385900059619D /* Assets.xcassets */; };
 		C4B23383275385900059619D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B23381275385900059619D /* LaunchScreen.storyboard */; };
+		C4B2338C275387390059619D /* ReceptBeers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2338A275387390059619D /* ReceptBeers.swift */; };
+		C4B23391275388850059619D /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B23390275388850059619D /* CoreDataService.swift */; };
+		C4B23395275389240059619D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B23392275389240059619D /* Main.storyboard */; };
+		C4B23396275389240059619D /* StartViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B23393275389240059619D /* StartViewPresenter.swift */; };
+		C4B23397275389240059619D /* StartViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B23394275389240059619D /* StartViewViewController.swift */; };
+		C4B2339C27538A340059619D /* TableViewMVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B2339927538A340059619D /* TableViewMVP.storyboard */; };
+		C4B2339D27538A340059619D /* TableViewMVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2339A27538A340059619D /* TableViewMVPPresenter.swift */; };
+		C4B2339E27538A340059619D /* TableViewMVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2339B27538A340059619D /* TableViewMVPViewController.swift */; };
+		C4B233A32753950E0059619D /* Configuration.yml in Resources */ = {isa = PBXBuildFile; fileRef = C4B233A22753950E0059619D /* Configuration.yml */; };
+		C4B233A6275396620059619D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4B233A5275396620059619D /* Localizable.strings */; };
+		C4B233AB275397E50059619D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233A7275397E50059619D /* Strings.swift */; };
+		C4B233AC275397E50059619D /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233A8275397E50059619D /* StoryboardScenes.swift */; };
+		C4B233AD275397E50059619D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233A9275397E50059619D /* Assets.swift */; };
+		C4B233AE275397E50059619D /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233AA275397E50059619D /* StoryboardSegues.swift */; };
+		C4B233B32753996B0059619D /* FavouriteBeerMVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B233B02753996B0059619D /* FavouriteBeerMVP.storyboard */; };
+		C4B233B42753996B0059619D /* FavouriteBeerMVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233B12753996B0059619D /* FavouriteBeerMVPPresenter.swift */; };
+		C4B233B52753996B0059619D /* FavouriteBeerMVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233B22753996B0059619D /* FavouriteBeerMVPViewController.swift */; };
+		C4B233B92753B09F0059619D /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B233B82753B09F0059619D /* MyCell.xib */; };
+		C4B233BB2753B0C40059619D /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B233BA2753B0C40059619D /* MyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AA4A1BC899EF745A24FFBFD /* Pods_BeerRecepts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerRecepts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28C10FD0DF67F0305E81FAB /* Pods-BeerRecepts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerRecepts.release.xcconfig"; path = "Target Support Files/Pods-BeerRecepts/Pods-BeerRecepts.release.xcconfig"; sourceTree = "<group>"; };
+		C483262A275FF38C006E4401 /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
+		C483262D275FF3B6006E4401 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		C49BAC85275BAE4600D9154F /* InfoBeerMVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoBeerMVP.storyboard; sourceTree = "<group>"; };
+		C49BAC86275BAE4600D9154F /* InfoBeerMVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBeerMVPPresenter.swift; sourceTree = "<group>"; };
+		C49BAC87275BAE4600D9154F /* InfoBeerMVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBeerMVPViewController.swift; sourceTree = "<group>"; };
 		C4B233702753858F0059619D /* BeerRecepts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerRecepts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B233732753858F0059619D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B233752753858F0059619D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4B233772753858F0059619D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4B2337A2753858F0059619D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4B2337A2753858F0059619D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main22.storyboard; sourceTree = "<group>"; };
 		C4B2337D2753858F0059619D /* BeerRecepts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeerRecepts.xcdatamodel; sourceTree = "<group>"; };
 		C4B2337F275385900059619D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B23382275385900059619D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4B23384275385900059619D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B2338A275387390059619D /* ReceptBeers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptBeers.swift; sourceTree = "<group>"; };
+		C4B23390275388850059619D /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		C4B23392275389240059619D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4B23393275389240059619D /* StartViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewPresenter.swift; sourceTree = "<group>"; };
+		C4B23394275389240059619D /* StartViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewViewController.swift; sourceTree = "<group>"; };
+		C4B2339927538A340059619D /* TableViewMVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewMVP.storyboard; sourceTree = "<group>"; };
+		C4B2339A27538A340059619D /* TableViewMVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMVPPresenter.swift; sourceTree = "<group>"; };
+		C4B2339B27538A340059619D /* TableViewMVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMVPViewController.swift; sourceTree = "<group>"; };
+		C4B233A22753950E0059619D /* Configuration.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = Configuration.yml; sourceTree = "<group>"; };
+		C4B233A5275396620059619D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C4B233A7275397E50059619D /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C4B233A8275397E50059619D /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		C4B233A9275397E50059619D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		C4B233AA275397E50059619D /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
+		C4B233B02753996B0059619D /* FavouriteBeerMVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavouriteBeerMVP.storyboard; sourceTree = "<group>"; };
+		C4B233B12753996B0059619D /* FavouriteBeerMVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteBeerMVPPresenter.swift; sourceTree = "<group>"; };
+		C4B233B22753996B0059619D /* FavouriteBeerMVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteBeerMVPViewController.swift; sourceTree = "<group>"; };
+		C4B233B82753B09F0059619D /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		C4B233BA2753B0C40059619D /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		EC5C99E338BB0E08FAFD448E /* Pods-BeerRecepts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerRecepts.debug.xcconfig"; path = "Target Support Files/Pods-BeerRecepts/Pods-BeerRecepts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +85,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A5961D7290934457AF6F4D /* Pods_BeerRecepts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65ED24401733CF32EFB85454 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C99E338BB0E08FAFD448E /* Pods-BeerRecepts.debug.xcconfig */,
+				B28C10FD0DF67F0305E81FAB /* Pods-BeerRecepts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83BB968D95EBF1F56C48E40B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA4A1BC899EF745A24FFBFD /* Pods_BeerRecepts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C483262C275FF396006E4401 /* CartCell */ = {
+			isa = PBXGroup;
+			children = (
+				C483262A275FF38C006E4401 /* CartCell.xib */,
+				C483262D275FF3B6006E4401 /* CartCell.swift */,
+			);
+			path = CartCell;
+			sourceTree = "<group>";
+		};
+		C49BAC8B275BAE4E00D9154F /* InfoBeerMVP */ = {
+			isa = PBXGroup;
+			children = (
+				C49BAC85275BAE4600D9154F /* InfoBeerMVP.storyboard */,
+				C49BAC86275BAE4600D9154F /* InfoBeerMVPPresenter.swift */,
+				C49BAC87275BAE4600D9154F /* InfoBeerMVPViewController.swift */,
+			);
+			path = InfoBeerMVP;
+			sourceTree = "<group>";
+		};
 		C4B233672753858E0059619D = {
 			isa = PBXGroup;
 			children = (
 				C4B233722753858F0059619D /* BeerRecepts */,
 				C4B233712753858F0059619D /* Products */,
+				65ED24401733CF32EFB85454 /* Pods */,
+				83BB968D95EBF1F56C48E40B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +149,101 @@
 		C4B233722753858F0059619D /* BeerRecepts */ = {
 			isa = PBXGroup;
 			children = (
+				C4B233A12753943B0059619D /* SwiftGen */,
+				C483262C275FF396006E4401 /* CartCell */,
+				C4B233B72753B0730059619D /* MyCell */,
+				C4B2338F2753886F0059619D /* Service */,
+				C4B2338E275387560059619D /* Models */,
+				C4B233A4275395F40059619D /* Resources */,
+				C4B233982753894D0059619D /* StartView */,
+				C4B2339F27538A570059619D /* TableViewMVP */,
+				C49BAC8B275BAE4E00D9154F /* InfoBeerMVP */,
+				C4B233B6275399780059619D /* FavouriteBeerMVP */,
 				C4B233732753858F0059619D /* AppDelegate.swift */,
-				C4B233752753858F0059619D /* SceneDelegate.swift */,
 				C4B233772753858F0059619D /* ViewController.swift */,
-				C4B233792753858F0059619D /* Main.storyboard */,
-				C4B2337F275385900059619D /* Assets.xcassets */,
+				C4B233792753858F0059619D /* Main22.storyboard */,
+				C4B233752753858F0059619D /* SceneDelegate.swift */,
 				C4B23381275385900059619D /* LaunchScreen.storyboard */,
 				C4B23384275385900059619D /* Info.plist */,
 				C4B2337C2753858F0059619D /* BeerRecepts.xcdatamodeld */,
 			);
 			path = BeerRecepts;
+			sourceTree = "<group>";
+		};
+		C4B2338E275387560059619D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4B2338A275387390059619D /* ReceptBeers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4B2338F2753886F0059619D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C4B23390275388850059619D /* CoreDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C4B233982753894D0059619D /* StartView */ = {
+			isa = PBXGroup;
+			children = (
+				C4B23392275389240059619D /* Main.storyboard */,
+				C4B23393275389240059619D /* StartViewPresenter.swift */,
+				C4B23394275389240059619D /* StartViewViewController.swift */,
+			);
+			path = StartView;
+			sourceTree = "<group>";
+		};
+		C4B2339F27538A570059619D /* TableViewMVP */ = {
+			isa = PBXGroup;
+			children = (
+				C4B2339927538A340059619D /* TableViewMVP.storyboard */,
+				C4B2339A27538A340059619D /* TableViewMVPPresenter.swift */,
+				C4B2339B27538A340059619D /* TableViewMVPViewController.swift */,
+			);
+			path = TableViewMVP;
+			sourceTree = "<group>";
+		};
+		C4B233A12753943B0059619D /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				C4B233A22753950E0059619D /* Configuration.yml */,
+				C4B233A9275397E50059619D /* Assets.swift */,
+				C4B233A8275397E50059619D /* StoryboardScenes.swift */,
+				C4B233AA275397E50059619D /* StoryboardSegues.swift */,
+				C4B233A7275397E50059619D /* Strings.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		C4B233A4275395F40059619D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4B2337F275385900059619D /* Assets.xcassets */,
+				C4B233A5275396620059619D /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4B233B6275399780059619D /* FavouriteBeerMVP */ = {
+			isa = PBXGroup;
+			children = (
+				C4B233B02753996B0059619D /* FavouriteBeerMVP.storyboard */,
+				C4B233B12753996B0059619D /* FavouriteBeerMVPPresenter.swift */,
+				C4B233B22753996B0059619D /* FavouriteBeerMVPViewController.swift */,
+			);
+			path = FavouriteBeerMVP;
+			sourceTree = "<group>";
+		};
+		C4B233B72753B0730059619D /* MyCell */ = {
+			isa = PBXGroup;
+			children = (
+				C4B233B82753B09F0059619D /* MyCell.xib */,
+				C4B233BA2753B0C40059619D /* MyCell.swift */,
+			);
+			path = MyCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4B23387275385900059619D /* Build configuration list for PBXNativeTarget "BeerRecepts" */;
 			buildPhases = (
+				21E5F57F22A1B1565A55FAD7 /* [CP] Check Pods Manifest.lock */,
+				C4B233A0275392480059619D /* SwiftGen */,
 				C4B2336C2753858F0059619D /* Sources */,
 				C4B2336D2753858F0059619D /* Frameworks */,
 				C4B2336E2753858F0059619D /* Resources */,
+				FA8020AE5D250E3358AF8B2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,35 +307,119 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4B233B32753996B0059619D /* FavouriteBeerMVP.storyboard in Resources */,
+				C4B23395275389240059619D /* Main.storyboard in Resources */,
+				C4B233A32753950E0059619D /* Configuration.yml in Resources */,
 				C4B23383275385900059619D /* LaunchScreen.storyboard in Resources */,
+				C4B233A6275396620059619D /* Localizable.strings in Resources */,
+				C483262B275FF38C006E4401 /* CartCell.xib in Resources */,
+				C4B2339C27538A340059619D /* TableViewMVP.storyboard in Resources */,
+				C49BAC88275BAE4600D9154F /* InfoBeerMVP.storyboard in Resources */,
 				C4B23380275385900059619D /* Assets.xcassets in Resources */,
-				C4B2337B2753858F0059619D /* Main.storyboard in Resources */,
+				C4B233B92753B09F0059619D /* MyCell.xib in Resources */,
+				C4B2337B2753858F0059619D /* Main22.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E5F57F22A1B1565A55FAD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeerRecepts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4B233A0275392480059619D /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if which $PODS_ROOT/SwiftGen/bin/swiftgen >/dev/null; then\n    $PODS_ROOT/SwiftGen/bin/swiftgen config run --config \"$PROJECT_DIR/BeerRecepts/SwiftGen/Configuration.yml\"\n    touch \"$PROJECT_DIR/BeerRecepts/SwiftGen/Configuration.yml\"\n#else\n    #echo \"SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\n#fi\n\n";
+		};
+		FA8020AE5D250E3358AF8B2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeerRecepts/Pods-BeerRecepts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeerRecepts/Pods-BeerRecepts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeerRecepts/Pods-BeerRecepts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4B2336C2753858F0059619D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49BAC8A275BAE4600D9154F /* InfoBeerMVPViewController.swift in Sources */,
+				C4B233AE275397E50059619D /* StoryboardSegues.swift in Sources */,
+				C4B2339E27538A340059619D /* TableViewMVPViewController.swift in Sources */,
+				C4B233AB275397E50059619D /* Strings.swift in Sources */,
+				C4B233BB2753B0C40059619D /* MyCell.swift in Sources */,
+				C49BAC89275BAE4600D9154F /* InfoBeerMVPPresenter.swift in Sources */,
+				C4B23397275389240059619D /* StartViewViewController.swift in Sources */,
+				C4B233B52753996B0059619D /* FavouriteBeerMVPViewController.swift in Sources */,
 				C4B2337E2753858F0059619D /* BeerRecepts.xcdatamodeld in Sources */,
+				C4B23396275389240059619D /* StartViewPresenter.swift in Sources */,
 				C4B233782753858F0059619D /* ViewController.swift in Sources */,
+				C483262E275FF3B6006E4401 /* CartCell.swift in Sources */,
+				C4B2339D27538A340059619D /* TableViewMVPPresenter.swift in Sources */,
 				C4B233742753858F0059619D /* AppDelegate.swift in Sources */,
+				C4B233AD275397E50059619D /* Assets.swift in Sources */,
+				C4B2338C275387390059619D /* ReceptBeers.swift in Sources */,
+				C4B233B42753996B0059619D /* FavouriteBeerMVPPresenter.swift in Sources */,
+				C4B23391275388850059619D /* CoreDataService.swift in Sources */,
 				C4B233762753858F0059619D /* SceneDelegate.swift in Sources */,
+				C4B233AC275397E50059619D /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C4B233792753858F0059619D /* Main.storyboard */ = {
+		C4B233792753858F0059619D /* Main22.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C4B2337A2753858F0059619D /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main22.storyboard;
 			sourceTree = "<group>";
 		};
 		C4B23381275385900059619D /* LaunchScreen.storyboard */ = {
@@ -288,6 +551,7 @@
 		};
 		C4B23388275385900059619D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5C99E338BB0E08FAFD448E /* Pods-BeerRecepts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +559,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeerRecepts/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeersShop;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,6 +580,7 @@
 		};
 		C4B23389275385900059619D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28C10FD0DF67F0305E81FAB /* Pods-BeerRecepts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +588,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeerRecepts/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeersShop;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

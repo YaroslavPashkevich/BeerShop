@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ReceptBeers" representedClassName="ReceptBeers" syncable="YES">
+        <attribute name="beer" optional="YES" attributeType="String"/>
+        <attribute name="beerAbv" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="beerDescription" optional="YES" attributeType="String"/>
+        <attribute name="beerImageUrl" optional="YES" attributeType="String"/>
+        <attribute name="beerTagline" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="ReceptBeers" positionX="-63" positionY="-18" width="128" height="104"/>
+    </elements>
 </model>

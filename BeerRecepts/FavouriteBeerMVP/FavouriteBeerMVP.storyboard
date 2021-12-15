@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1t2-l7-yzn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favourite BeerMVP View Controller-->
+        <scene sceneID="rpV-mr-Pav">
+            <objects>
+                <viewController storyboardIdentifier="FavouriteBeerMVPViewController" id="1t2-l7-yzn" customClass="FavouriteBeerMVPViewController" customModule="BeerRecepts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dHv-Ld-GZd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fvH-Ub-31U">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8Iw-oB-1hl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1t2-l7-yzn" id="xRP-YN-IV5"/>
+                                    <outlet property="delegate" destination="1t2-l7-yzn" id="Jzz-2m-hyd"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tdq-5P-rKU">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-So-HGd">
+                                        <rect key="frame" x="0.0" y="0.0" width="204.5" height="49"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="tintColor" systemColor="systemGray4Color"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Список">
+                                            <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Layer.CornerRadius">
+                                                <integer key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backToTableButtonPressed" destination="1t2-l7-yzn" eventType="touchUpInside" id="GoH-ap-U7E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivy-Uk-dP7">
+                                        <rect key="frame" x="209.5" y="0.0" width="204.5" height="49"/>
+                                        <color key="backgroundColor" red="0.27863240636992365" green="0.03321785765912523" blue="0.76939731840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="tintColor" systemColor="systemGray4Color"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Купить">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buyBeerButtonPressed" destination="1t2-l7-yzn" eventType="touchUpInside" id="hlS-1F-N1P"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yyz-So-HGd" firstAttribute="leading" secondItem="tdq-5P-rKU" secondAttribute="leading" id="QUR-xq-YtS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lO1-Lq-3c2"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="fvH-Ub-31U" secondAttribute="trailing" id="8qt-AL-D8p"/>
+                            <constraint firstItem="8Iw-oB-1hl" firstAttribute="top" secondItem="lO1-Lq-3c2" secondAttribute="top" id="Cwy-bg-hpX"/>
+                            <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="tdq-5P-rKU" secondAttribute="trailing" id="DK5-Vq-fvo"/>
+                            <constraint firstItem="tdq-5P-rKU" firstAttribute="leading" secondItem="lO1-Lq-3c2" secondAttribute="leading" id="Pfr-rp-oib"/>
+                            <constraint firstItem="8Iw-oB-1hl" firstAttribute="trailing" secondItem="lO1-Lq-3c2" secondAttribute="trailing" id="Voo-U7-dQL"/>
+                            <constraint firstItem="fvH-Ub-31U" firstAttribute="leading" secondItem="lO1-Lq-3c2" secondAttribute="leading" id="d81-uY-lBx"/>
+                            <constraint firstItem="tdq-5P-rKU" firstAttribute="top" secondItem="8Iw-oB-1hl" secondAttribute="bottom" id="gmf-Nd-Vta"/>
+                            <constraint firstItem="fvH-Ub-31U" firstAttribute="top" secondItem="lO1-Lq-3c2" secondAttribute="top" id="h4e-Hn-p6q"/>
+                            <constraint firstItem="8Iw-oB-1hl" firstAttribute="leading" secondItem="lO1-Lq-3c2" secondAttribute="leading" id="jvc-pP-SAO"/>
+                            <constraint firstItem="tdq-5P-rKU" firstAttribute="top" secondItem="fvH-Ub-31U" secondAttribute="bottom" id="pnl-Sg-3Eo"/>
+                            <constraint firstItem="tdq-5P-rKU" firstAttribute="bottom" secondItem="lO1-Lq-3c2" secondAttribute="bottom" id="u7w-zi-fHU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backToTableButton" destination="yyz-So-HGd" id="6cL-kU-n3c"/>
+                        <outlet property="buyToTableButton" destination="ivy-Uk-dP7" id="RAc-i4-ehi"/>
+                        <outlet property="cartTableView" destination="8Iw-oB-1hl" id="BKZ-nx-K7w"/>
+                        <outlet property="screenImageView" destination="fvH-Ub-31U" id="fpC-Gr-m3P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7B-uH-bVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
