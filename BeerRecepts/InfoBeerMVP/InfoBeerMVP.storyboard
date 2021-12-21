@@ -61,39 +61,36 @@
                                 <color key="textColor" red="0.07345209271" green="0.064827658240000002" blue="0.7686801553" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-AD-5wu">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-AD-5wu">
                                 <rect key="frame" x="265" y="770" width="139" height="42"/>
+                                <color key="backgroundColor" red="0.13125457260000001" green="0.76939731840000003" blue="0.093864184749999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="c6Z-ZB-FJv"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="В">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="STSongti-SC-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" ">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="Herculanum"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="корзину">
-                                            <attributes>
-                                                <font key="NSFont" size="24" name="STSongti-SC-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" red="0.069498243170000001" green="0.059885198049999998" blue="0.76939731840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <backgroundConfiguration key="background"/>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="basket" destination="1t2-l7-yzn" eventType="touchUpInside" id="akX-Fq-f7j"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oI7-DS-yS9">
+                                <rect key="frame" x="269" y="770" width="130" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mmn-le-RzF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lO1-Lq-3c2"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,11 +102,14 @@
                             <constraint firstItem="yw0-I4-ZF7" firstAttribute="top" secondItem="M70-QJ-Wqb" secondAttribute="bottom" constant="15" id="B6X-Za-WFI"/>
                             <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="OsW-u0-sjp" secondAttribute="trailing" constant="5" id="CzR-l0-Oyd"/>
                             <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="yw0-I4-ZF7" secondAttribute="trailing" constant="30" id="D4M-15-Htw"/>
+                            <constraint firstItem="F7A-AD-5wu" firstAttribute="leading" secondItem="eBf-c3-QmC" secondAttribute="trailing" constant="1" id="FLl-um-r9C"/>
                             <constraint firstItem="M70-QJ-Wqb" firstAttribute="leading" secondItem="lO1-Lq-3c2" secondAttribute="leading" constant="30" id="K3Z-V1-ITa"/>
                             <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="Iph-hG-OOe" secondAttribute="trailing" constant="5" id="M3S-TJ-6k9"/>
+                            <constraint firstItem="F7A-AD-5wu" firstAttribute="top" secondItem="H5x-ln-bBF" secondAttribute="bottom" constant="38" id="Mxo-qs-VHL"/>
                             <constraint firstItem="gm4-Lm-JMm" firstAttribute="leading" secondItem="lO1-Lq-3c2" secondAttribute="leading" id="Try-yU-1gR"/>
-                            <constraint firstItem="lO1-Lq-3c2" firstAttribute="bottom" secondItem="F7A-AD-5wu" secondAttribute="bottom" constant="50" id="TwB-bR-g59"/>
                             <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="M70-QJ-Wqb" secondAttribute="trailing" constant="30" id="WWV-qC-mEk"/>
+                            <constraint firstItem="oI7-DS-yS9" firstAttribute="leading" secondItem="eBf-c3-QmC" secondAttribute="trailing" constant="5" id="Xbt-FD-9gQ"/>
+                            <constraint firstItem="oI7-DS-yS9" firstAttribute="top" secondItem="H5x-ln-bBF" secondAttribute="bottom" constant="38" id="Xqq-sa-pGd"/>
                             <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="H5x-ln-bBF" secondAttribute="trailing" constant="15" id="Y8h-lZ-cjg"/>
                             <constraint firstItem="Iph-hG-OOe" firstAttribute="top" secondItem="OsW-u0-sjp" secondAttribute="bottom" constant="25" id="ZFo-0B-jd0"/>
                             <constraint firstItem="yw0-I4-ZF7" firstAttribute="leading" secondItem="lO1-Lq-3c2" secondAttribute="leading" constant="30" id="ZQl-ob-pIG"/>
@@ -119,6 +119,7 @@
                             <constraint firstItem="lO1-Lq-3c2" firstAttribute="bottom" secondItem="H5x-ln-bBF" secondAttribute="bottom" constant="130" id="hUl-dY-73H"/>
                             <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="F7A-AD-5wu" secondAttribute="trailing" constant="10" id="juE-yl-bxS"/>
                             <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="gm4-Lm-JMm" secondAttribute="trailing" id="lJt-nZ-vn7"/>
+                            <constraint firstItem="lO1-Lq-3c2" firstAttribute="trailing" secondItem="oI7-DS-yS9" secondAttribute="trailing" constant="15" id="mXd-fg-DcQ"/>
                             <constraint firstItem="gm4-Lm-JMm" firstAttribute="top" secondItem="lO1-Lq-3c2" secondAttribute="top" id="stM-h1-WUe"/>
                             <constraint firstItem="eBf-c3-QmC" firstAttribute="leading" secondItem="lO1-Lq-3c2" secondAttribute="leading" constant="50" id="vdk-hn-t9y"/>
                             <constraint firstItem="H5x-ln-bBF" firstAttribute="leading" secondItem="eBf-c3-QmC" secondAttribute="trailing" constant="15" id="vvC-RZ-Jbe"/>
@@ -136,6 +137,8 @@
                         <outlet property="abvBeerLabel" destination="H5x-ln-bBF" id="HcV-64-DSS"/>
                         <outlet property="abvTextBeerLabel" destination="Iph-hG-OOe" id="opf-JC-CMT"/>
                         <outlet property="beerImageView" destination="eBf-c3-QmC" id="xDv-rX-3Ux"/>
+                        <outlet property="buttonBasket" destination="F7A-AD-5wu" id="UcQ-iD-13u"/>
+                        <outlet property="cartLabel" destination="oI7-DS-yS9" id="xyD-Lq-kMr"/>
                         <outlet property="infoBeerLabel" destination="yw0-I4-ZF7" id="r6n-he-sLf"/>
                         <outlet property="infoNameBeerLabel" destination="M70-QJ-Wqb" id="DVV-Nj-jsj"/>
                         <outlet property="screenImageView" destination="gm4-Lm-JMm" id="sRp-8k-H67"/>
@@ -144,14 +147,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7B-uH-bVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="-56"/>
+            <point key="canvasLocation" x="492.75362318840581" y="-56.25"/>
         </scene>
     </scenes>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

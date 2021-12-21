@@ -30,15 +30,18 @@ class InfoBeerMVPViewController: UIViewController {
     @IBOutlet private weak var abvBeerLabel:UILabel!
     @IBOutlet private weak var abvTextBeerLabel:UILabel!
     @IBOutlet private weak var taglineBeerLabel:UILabel!
+    @IBOutlet private weak var buttonBasket:UIButton!
+    @IBOutlet private weak var cartLabel:UILabel!
     
     var presenter: InfoBeerMVPPresenterProtocol = InfoBeerMVPPresenter()
 
    
-//    var array:[String] = []
+
 	override func viewDidLoad() {
         super.viewDidLoad()
         
-  
+        cartLabel.text = "В корзину"
+        cartLabel.textColor = .blue
         abvTextBeerLabel.text = "ALCOHOL"
         
    
@@ -49,13 +52,19 @@ class InfoBeerMVPViewController: UIViewController {
     }
     
     @IBAction private func basket() {
+        buttonBasket.backgroundColor = .blue
+       
+        cartLabel.text = "В корзине"
+        cartLabel.textColor = .white
         presenter.saveName()
+      
     }
     
     @IBAction private func cart()  {
         let cartVC = StoryboardScene.FavouriteBeerMVP.favouriteBeerMVPViewController.instantiate()
         navigationController?.pushViewController(cartVC, animated: true)
     }
+    
     
 }
 

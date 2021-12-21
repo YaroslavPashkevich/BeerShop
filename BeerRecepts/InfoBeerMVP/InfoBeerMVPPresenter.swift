@@ -20,13 +20,17 @@ protocol InfoBeerMVPPresenterProtocol {
     func viewDidLoad()
     func infoBeer(info: Recept)
     func saveName()
+ 
     
 }
 
 class InfoBeerMVPPresenter: InfoBeerMVPPresenterProtocol {
+  
+    
     
     weak var view: InfoBeerMVPViewProtocol?
     var infoRecept: Recept?
+    var count: String?
  
     func infoBeer(info: Recept) {
         infoRecept = info
@@ -48,6 +52,8 @@ class InfoBeerMVPPresenter: InfoBeerMVPPresenterProtocol {
             }
         )
     }
+    
+
     
     func viewDidLoad() {
         guard let infoRecept = infoRecept else {

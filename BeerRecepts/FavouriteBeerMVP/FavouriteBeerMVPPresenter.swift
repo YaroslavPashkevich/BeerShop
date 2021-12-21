@@ -31,6 +31,7 @@ class FavouriteBeerMVPPresenter: FavouriteBeerMVPPresenterProtocol {
     weak var view: FavouriteBeerMVPViewProtocol?
     
     var beerFavorite: [ReceptBeers] = []
+   
     
     func addBeer() {
         DatabaseService.shared.entitiesFor(
@@ -43,6 +44,8 @@ class FavouriteBeerMVPPresenter: FavouriteBeerMVPPresenterProtocol {
             }
         )
     }
+    
+   
     
     func infoBeerCartImage(for indexPath: IndexPath) -> String {
         return beerFavorite[indexPath.row].beerImageUrl

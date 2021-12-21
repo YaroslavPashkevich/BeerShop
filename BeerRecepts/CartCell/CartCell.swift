@@ -35,7 +35,7 @@ class CartCell:UITableViewCell {
     }
         
     func updateCartImage(image: String) {
-//        guard let image = image else {return}
+
     
         imageBeerCartCell.sd_setImage(with: URL(string: image))
     }
