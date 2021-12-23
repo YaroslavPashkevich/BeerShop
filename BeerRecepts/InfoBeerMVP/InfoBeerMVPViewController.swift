@@ -39,6 +39,7 @@ class InfoBeerMVPViewController: UIViewController {
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+    
         
         cartLabel.text = "В корзину"
         cartLabel.textColor = .blue
@@ -52,8 +53,8 @@ class InfoBeerMVPViewController: UIViewController {
     }
     
     @IBAction private func basket() {
+
         buttonBasket.backgroundColor = .blue
-       
         cartLabel.text = "В корзине"
         cartLabel.textColor = .white
         presenter.saveName()

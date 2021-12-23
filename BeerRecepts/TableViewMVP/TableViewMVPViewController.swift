@@ -16,6 +16,7 @@ import SDWebImage
 protocol TableViewMVPViewProtocol: AnyObject {
     
     func reloadData()
+    func error()
     
 }
 
@@ -66,6 +67,11 @@ extension TableViewMVPViewController: UITableViewDelegate, UITableViewDataSource
         let infoBeerVC = StoryboardScene.InfoBeerMVP.infoBeerMVPViewController.instantiate()
         infoBeerVC.presenter.infoBeer(info: presenter.infoBeer(for: indexPath))
         navigationController?.pushViewController(infoBeerVC, animated: true)
+    }
+    func error() {
+        let errorVC = UIAlertController(title: "Error", message: "Not internet", preferredStyle: .alert)
+        errorVC.addAction(UIAlertAction(title: "ok", style: .cancel))
+        present(errorVC, animated: true, completion: nil)
     }
  
     @IBAction private func cart()  {

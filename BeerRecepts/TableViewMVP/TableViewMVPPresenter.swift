@@ -35,11 +35,18 @@ class TableViewMVPPresenter: TableViewMVPPresenterProtocol {
     func categoryBeerShow() {
         
         AF.request("https://api.punkapi.com/v2/beers",method: .get).responseDecodable(of:[Recept].self) { response in
+            let result = response.result
+            switch result {
+            case .success(_):
             guard let value = response.value else { return }
             self.beers = value
             self.view?.reloadData()
-            
+                
+            case .failure(_):
+                self.view?.error()
+            }
         }
+            
     }
     
     func categoryBeer(for indexPath: IndexPath) -> String {
